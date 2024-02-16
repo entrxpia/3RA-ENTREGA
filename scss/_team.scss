@@ -1,0 +1,47 @@
+// _team.scss
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+
+    .team {
+        padding: 40px;
+        text-align: center;
+
+        .team-members {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+
+            .team-member {
+                text-align: center;
+                margin: 20px;
+
+                img {
+                    width: 50%;
+                    height: auto;
+                    animation: rotate 1s linear infinite;
+
+                    &:hover {
+                        transform: rotate(360deg);
+                        transition: transform 0.8s ease-in-out;
+                    }
+                }
+            }
+        }
+    }
+
+    @media (max-width: 767px) {
+        .team {
+            padding: 20px;
+
+            .team-member {
+                margin: 10px;
+            }
+        }
+    }
+}

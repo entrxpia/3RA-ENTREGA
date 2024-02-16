@@ -1,0 +1,24 @@
+// _footer.scss
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+
+    footer {
+        background-color: #333;
+        color: #fff;
+        text-align: center;
+        padding: 20px;
+        margin-top: auto;
+    }
+
+    @media (max-width: 767px) {
+        footer {
+            padding: 10px;
+        }
+    }
+}

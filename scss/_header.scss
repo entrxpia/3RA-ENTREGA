@@ -1,0 +1,49 @@
+// _header.scss
+
+
+// _variables.scss
+
+$breakpoint-small: 767px;
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  
+    header {
+      background-color: rgb(9, 9, 9);
+      color: #fff;
+      padding: 40px;
+      text-align: center;
+  
+      h1 {
+        margin: 0;
+        font-size: 2.5em;
+      }
+  
+      p {
+        margin: 10px 0;
+      }
+  
+      .logolargo {
+        width: 50%;
+      }
+    }
+  
+    @media (max-width: $breakpoint-small) {
+      header {
+        padding: 20px;
+  
+        h1 {
+          font-size: 2em;
+        }
+      }
+    }
+  
+    // ... (otros estilos)
+  }
+  
